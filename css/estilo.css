@@ -1,0 +1,613 @@
+*{
+    margin: 0;/*No le ponemos nada de margen al html principal */
+    padding: 0;/*No le ponemos nada de relleno al html principal*/
+    font-family: roboto slab;/*La letra sera roboto*/
+    color: #7f888f;
+    font-weight: 700;
+    
+}
+
+.buscador{
+    height: 40px;/*La altura del buscador sera de 40px*/
+    width: 300px;/*La anchura sera de 300px*/
+    border: 1px solid grey;/*Tendra un borde de un 1px de color gris*/
+    border-radius: 10px;/*Tendra de redondeado de borde de 10px*/
+    background-color: white;/*El color del fondo sera blanco*/
+    margin: 40px 0px 0px 30px;/*Tendra una margin-alto de 40px, margin-derecho de 0px, un margen-abajo de 0px y un margen-izquierdo de 30px*/
+}
+
+.buscador:hover{
+    height: 40px;/*La altura del buscador sera de 40px*/
+    width: 300px;/*La anchura sera de 300px*/
+    border: 1px solid red;/*El paso con el raton tendra el color rojo*/
+    border-radius: 10px;/*Tendra de redondeado de borde de 10px*/
+    background-color: white;/*El color del fondo sera blanco*/
+    margin: 40px 0px 0px 30px;/*Tendra una margin-alto de 40px, margin-derecho de 0px, un margen-abajo de 0px y un margen-izquierdo de 30px*/
+}
+
+.search{
+    color: grey;/*El color de la palabra search sera gris*/
+    font-size: 20px;/*Tendra un tamaño de 20px*/
+    justify-content: left;/*Estara alineado hacia la izquierda*/
+    display: flex;/*Se mostrara en la misma linea*/
+}
+
+.dentro{
+    margin: 5px 0px 0px 20px;/*Tendra un margen global de 10px la palabra de dentro*/
+}
+
+.i{
+    margin: 0px 0px 0px 180px;/*El icono tendra un margen izquierdo de 180px*/
+    color: grey;/*Tendra un color gris*/
+}
+
+.contenedor1{
+    background-color: rgba(224, 225, 231, 0.973);/*El primer contenedor tendra este color de fondo*/
+    width: 420px;/*Y tendra 420 de anchura sobre el documento*/
+}
+
+.contenedor2{
+    background-color: #eff1f2;/*El contenedor2 tendra este color de fondo*/
+    width: 100%;/*Tendra un 100% sobre el documento*/
+    position: relative;/*Tendra una psocion normal*/
+    color: #7f888f;
+}
+
+.contenedor3{
+    width: 100%;/*El contenedor tendra el 100% de anchura sobre el documento*/
+}
+
+.bloque1{
+    width: 100%;/*El bloque tendra una anchura del 100%*/
+    height: 100%;/*Tendra una altura del 100%*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+}
+
+ul{
+    list-style: none;/*La lista no tendra estilo*/
+    text-decoration: none;/*Tampoco tendra una decoracion para el texto*/
+}
+
+.menu{
+    width: 100%;/*El bloque tendra una anchura del 100%*/
+    margin-top: 50px;/*El menu tendra un margen-ato de 50px*/
+    margin-left: 30px;/*Y un margen-izquierdo de 30px*/
+    list-style: none;/*La lista no tendra estilo*/
+    text-decoration: none;/*Tampoco tendra una decoracion para el texto*/
+    color: #7f888f;
+}
+
+.titulomenu{
+    color: black;/*Tendra un color negro*/
+    font-size: 25px;/*Tamaño de la letra en 25px*/
+    font-weight: 900;/*Intensidad de la letra*/
+    line-height: 1.5;/*Separacion entre lineas*/
+    border-bottom: 3px solid red;/*Redondeo de boton*/
+    width: 100px;/*Anchura de 100px*/
+    margin-bottom: 20px;/*margen bajo*/
+    margin-top: -10px;/*Margen alto*/
+    padding-top: 30px;/*Relleno alto*/
+    padding-bottom: 10px;
+}
+
+.tituloget{
+    color: black;/*Tendra un color negro*/
+    font-size: 25px;/*Tamaño de la letra 25px*/
+    font-weight: 900;/*Intensidad de la letra*/
+    line-height: 1.5;/*Separacion entre lineas 1.5*/
+    border-bottom: 3px solid red;/*Redondeado del borde en rojo con 3px*/
+    width: 175px;/*Anchura de 175px*/
+    margin-bottom: 20px;/*Margen bajo*/
+    margin-top: -10px;/*Margen alto*/
+    padding-top: 30px;/*Relleno alto de 30px*/
+    margin-left: 30px;/*Margin izquierdo de 30px*/
+    padding-bottom: 10px;
+}
+
+.li{
+    font-size: 15px;/*Para la classe li le pondremos 15 de tamaño de letra*/
+    padding-top: 25px;/*Un relleno alto de 25px*/
+    line-height: 1.5;/*Una separacion entre lineas de 1.5*/
+    border-bottom: 1px solid grey;/*Un redondeo de borde gris con 1px*/
+    width: 300px;/*Una anchura de 300px*/
+    list-style: none;/*Sin estilo*/
+    text-decoration: none;/*Y sin decoracion en el texo*/
+    color: #7f888f;
+    font-weight: 700;
+}
+
+a{
+    list-style: none;/*Nada de estilo en las listas*/
+    text-decoration: none;/*Nada de decoracion en el texto*/
+    color: #7f888f;/*Tendra un color negro*/
+}
+
+a:hover{
+    list-style: none;/*Sin estilo*/
+    text-decoration: none;/*Y sin decoracion en el texo*/
+    color: red;/*Tendra un color rojo*/
+    transition: .3s;/*Le ponemos un transicion que dura 3 segundos*/
+}
+
+.linea{
+    line-height: 1.5;/*Una separacion entre lineas de 1.5*/
+    border-bottom: 1px solid grey;/*Un redondeo de borde gris con 1px*/
+    width: 300px;/*Una anchura de 300px*/
+    list-style: none;/*Nada de estilo en las listas*/
+    text-decoration: none;/*Nada de decoracion en el texto*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    margin: 60px 0px 40px 30px;/*Un margen de 60-alto, 0-derecha, 40-bajo y 30-izquierda*/
+    font-weight: 900;/*Intensidad de la letra*/
+}
+
+.linea2{
+    line-height: 1.5;/*Una separacion entre lineas de 1.5*/
+    border-bottom: 1px solid grey;/*Borde gris*/
+    width: 300px;/*Una anchura de 300px*/
+    list-style: none;/*Sin estilo*/
+    text-decoration: none;/*Nada de decoracion en el texto*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    margin: 30px 0px 40px 30px;/*Margenes*/
+    font-weight: 900;/*Intensidad de la letra*/
+}
+
+.linea3{
+    line-height: 1.5;/*Una separacion entre lineas de 1.5*/
+    border-bottom: 1px solid transparent;/*Borde transparente*/
+    width: 300px;/*Una anchura de 300px*/
+    list-style: none;/*Sin estilo*/
+    text-decoration: none;/*Nada de decoracion en el texto*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    margin: 50px 0px 0px 30px;/*Margen*/
+    font-weight: 900;/*Intensidad de la letra*/
+}
+
+.tituloante{
+    color: black;/*Tendra un color negro*/
+    font-size: 25px;/*Tamaño de la letra*/
+    font-weight: 900;/*Intensidad de la letra*/
+    line-height: 1.5;/*Una separacion entre lineas de 1.5*/
+    border-bottom: 3px solid red;
+    width: 200px;/*Una anchura de 200px*/
+    margin-bottom: 20px;/*Margen*/
+    margin-top: -10px;/*Margen*/
+    padding-top: 30px;/*Relleno*/
+    margin-left: 30px;/*Margen*/
+    padding-bottom: 10px;
+}
+
+.img{
+    border-radius: 0.375em;/*Borde*/
+    border: 0;/*Borde*/
+    width: 300px;/*Una anchura de 300px*/
+    transition: transform .3s;/*Transicion de 3 segundos*/
+}
+
+.img:hover{
+    border-radius: 0.375em;/*Borde*/
+    border: 0;/*Borde*/
+    width: 300px;/*Una anchura de 300px*/
+    transform: scale(1.1);/*Tranformacion de aumento de 1.1*/
+}
+
+.bloqueoso{
+    margin: 20px 30px 0px 30px;/*Margen*/
+    width: 300px;/*Una anchura de 300px*/
+    overflow: hidden;/*Quitar overflow*/
+    border-radius: 0.375em;/*Borde*/
+    border: 0;/*Borde*/
+}
+
+.borde{
+    height: 180px;/*Altura*/
+    border-radius: 0.375em;/*Borde*/
+}
+
+.espaciotexto{
+    margin: 20px 0px 0px 30px;/*Margen*/
+    width: 300px;/*Una anchura de 300px*/
+}
+
+.texto{
+    font-size: 14px;/*Tamaño de la letra*/
+    line-height: 20px;/*Separacion entre lineas*/
+}
+
+.boton{
+    margin-top: 30px;/*Margen*/
+    margin-left: 30px;/*Margen*/
+    width: 70px;/*Anchura*/
+    border: 2px solid red;/*Borde*/
+    padding: 10px;/*Relleno*/
+    border-radius: 5px;/*Borde redondeado*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    font-size: 15px;/*Tamaño de la letra*/
+    font-weight: 900;/*Intensidad de la letra*/
+    color: red;/*Tendra un color rojo*/
+}
+
+.rojo{
+    color: red;/*Tendra un color rojo*/
+    font-weight: 900;/*Intensidad de la letra*/
+}
+
+.texto2{
+    margin-top: 30px;/*Margen*/
+    font-size: 13px;/*Tamaño de la letra*/
+    line-height: 20px;/*Separacion de la letra*/
+    margin-left: 30px;/*Margen*/
+    width: 270px;/*Una anchura de 300px*/
+}
+
+.iconos{
+    margin: 30px 0px 0px 30px;/*Margen*/
+    width: 300px;/*Una anchura de 300px*/
+    font-size: 13px;/*Tamaño de la letra*/
+}
+
+.separacion{
+    margin-left: 15px;/*Margen*/
+}
+
+.separacion2{
+    padding-right: 15px;/*Relleno*/
+}
+
+.separacion3{
+    padding-right: 15px;/*Relleno*/
+}
+
+i{
+    color: #f73808;/*Color*/
+}
+
+.untitled{
+    width: 300px;/*Una anchura de 300px*/
+    margin-left: 30px;/*Margen*/
+    font-size: 13px;/*Tamaño de la letra*/
+    color: grey;/*Color*/
+}
+
+.tres{
+    font-size: 30px;/*Tamaño de la letra*/
+    margin: 45px 0px 0px 30px;/*Margen*/
+}
+
+.bloquecont3{
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    margin: 50px 0px 0px 80px;/*Margen*/
+    font-size: 20px;/*Tamaño de la letra*/
+    width: 1250px;/*Anchura*/
+}
+
+.hover{
+    color: grey;/*Color*/
+    padding: 0px 10px 0px 0px;/*Relleno*/
+}
+
+.hover:hover{
+    color: red;/*Color*/
+    transition: 1s;/*Transicion de 1 segundo*/
+}
+
+.lineacont3{
+    line-height: 1.5;/*Separacion*/
+    border-bottom: 5px solid red;/*Borde*/
+    width: 1240px;/*Anchura de 1240*/
+    list-style: none;/*Nada de decoracion en el texto*/
+    text-decoration: none;/*Nada de decoracion en el texto*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    margin: 15px 0px 0px 90px;/*Margen*/
+    font-weight: 900;/*Intensidad de la letra*/
+}
+
+.bloquecontenido{
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    width: 1330px;/*Una anchura de 1330px*/
+}
+
+.bloquedentro{
+    margin: 70px 0px 0px 90px;/*Margen*/
+    width: 450px;/*Una anchura de 450px*/
+}
+
+.titulodentro{
+    width: 500px;/*Anchura*/
+    font-size: 60px;/*Tamaño de la letra*/
+    font-family:  serif;/*Letra*/
+    color: #3d4449;/*Color*/
+    font-weight: 900;/*Intensidad*/
+}
+
+.imagendentro{
+    margin-top: 90px;/*Margen*/
+    height: 460px;/*Anchura*/
+    border-radius: 5px;/*Redondeo del borde*/
+    object-fit: cover;/*La imagen se mantiene con su tamaño*/
+    margin-left: 130px;/*Margen*/
+}
+
+.titulo3dentro{
+    margin: 20px 0px 20px 0px;/*Margen*/
+    color: #3d4449;/*Color*/
+    font-size: 15px;/*Tamaño de la letra*/
+    width: 400px;/*Una anchura de 400px*/
+    line-height: 20px;/*Separacion*/
+}
+
+.parrafodentro{
+    color: #7f888f;/*Color*/
+    font-size: 15px;/*Tamaño de la letra*/
+    width: 500px;/*Anchura*/
+    line-height: 22px;/*Separacion*/
+}
+
+.botondentro{
+    margin-top: 30px;/*Margen*/
+    width:120px;/*Anchura*/
+    border: 2px solid red;/*Borde*/
+    padding: 10px;/*relleno*/
+    border-radius: 5px;/*Borde*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    font-size: 15px;/*Tamaño*/
+    font-weight: 900;/*Insensidad*/
+    color: red;/*Color*/
+}
+
+.lineafina{
+    line-height: 1.5;/*Separacion*/
+    border-bottom: 1px solid grey;/*Borde*/
+    width: 1240px;/*Anchura*/
+    list-style: none;/*Nada de decoracion en el texto*/
+    text-decoration: none;/*Nada de decoracion en el texto*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    margin: 70px 0px 0px 90px;/*Margen*/
+}
+
+.tituloerat{
+    color: black;/*Color*/
+    font-size: 25px;/*Tamaño de la letra*/
+    font-weight: 900;/*Intensidad*/
+    line-height: 1.5;/*Separacion*/
+    border-bottom: 3px solid red;/*Borde*/
+    width: 160px;/*Anchura*/
+    margin-bottom: 20px;/*Margen*/
+    margin-top: 50px;/*Margen*/
+    margin-left: 90px;/*Margen*/
+    padding-bottom: 10px;
+}
+
+.derecha{
+    margin-left: 870px;/*Margen*/
+}
+
+.articulo{
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    margin-left: 90px;/*Margen*/
+    width: 1245px;/*Anchura*/
+}
+
+.tamaño{
+    font-size: 60px;/*Tamaño de la letra*/
+    padding: 60px;/*relleno*/
+    transform: rotate(315deg);/*Rotacion del objeto*/
+    text-align: center;/**/
+    margin: 0px 0px 0px 0px;/*Margen*/
+    position: relative;/*Posicion relativa*/
+    top: -35px;/*Altura*/
+    left: -35px;/*Izquierda*/
+}
+
+.x{
+    border: 2px solid rgba(210, 215, 217, 0.75);/*Borde*/
+    height: 7em;/*Altura*/
+    width: 7em;/*Anchura*/
+    display: block;/*Disposicion en bloque*/
+    transform: rotate(45deg);
+    margin-top: 50px;/*Margen*/
+    margin-left: 25px;/*Margen*/
+    margin-bottom: 50px;/*Margen*/
+    position: relative;/*Posicion relativa*/
+}
+
+.tituloarticulo{
+    margin-left: 40px;/*Margen*/
+    margin-top: 30px;/*Margen*/
+    color: black;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+}
+
+.parrafoarticulo{
+    margin-left: 40px;/*Margen*/
+    margin-top: 30px;/*Margen*/
+    line-height: 20px;/*Separacion*/
+}
+
+.tituloipsum{
+    color: black;
+    font-size: 25px;/*Tamaño de la letra*/
+    font-weight: 900;/*Intensidad de la letra*/
+    line-height: 1.5;/*Separacion*/
+    border-bottom: 3px solid red;/*Borde*/
+    width: 220px;/*Anchura*/
+    margin-bottom: 20px;/*Margen*/
+    margin-top: 50px;/*Margen*/
+    margin-left: 90px;/*Margen*/
+    padding-bottom: 10px;
+}
+
+.articulobloque{
+    width: 1330px;/*Anchura*/
+}
+
+.bloquede3{
+    margin: 30px 0px 0px 90px;/*Margen*/
+    width: 500px;/*Anchura*/
+}
+
+.bloquede4{
+    margin: 30px 0px 0px 70px;/*Margen*/
+    width: 500px;/*Anchura*/
+}
+
+.margen{
+    margin-left: -20px;/*Margen*/
+}
+
+.tituloarticulobloque{
+    margin: 20px 0px 0px 90px;/*Margen*/
+    width: 500px;/*Anchura*/
+    color: black;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+}
+
+.parrafoarticulobloque{
+    margin: 20px 0px 0px 90px;/*Margen*/
+    width: 320px;/*Anchura*/
+    line-height: 20px;/*Separacion entre lineas*/
+}
+
+.todo{
+    width: 443px;/*Anchura*/ 
+    border: 1px solid rgba(210, 215, 217, 0.75);/*Borde*/
+    border-top: hidden;/*Borrar linea del borde*/
+    border-left: hidden;/*Borrar linea del borde*/
+    position: relative;/*Posicion en relación con su posición normal*/
+}
+
+.todo2{
+    width: 443px;/*Anchura*/ 
+    border: 1px solid rgba(210, 215, 217, 0.75);/*Borde*/
+    border-top: hidden;/*Borrar linea del borde*/
+    border-left: hidden;/*Borrar linea del borde*/
+    border-right: hidden;/*Borrar linea del borde*/
+    position: relative;/*Posicion en relación con su posición normal*/
+}
+
+.todo3{
+    width: 443px;/*Anchura*/
+    border: 1px solid rgba(210, 215, 217, 0.75);/*Borde*/
+    border-top: hidden;/*Borrar linea del borde*/
+    border-left: hidden;/*Borrar linea del borde*/
+    border-bottom: hidden;/*Borrar linea del borde*/
+    position: relative;/*Posicion en relación con su posición normal*/
+}
+
+.todo4{
+    width: 443px;/*Anchura*/
+    border: 1px solid rgba(210, 215, 217, 0.75);/*Borde*/
+    border-top: hidden;/*Borrar linea del borde*/
+    border-left: hidden;/*Borrar linea del borde*/
+    border-right: hidden;/*Borrar linea del borde*/
+    border-bottom: hidden;/*Borrar linea del borde*/
+    position: relative;/*Posicion en relación con su posición normal*/
+}
+
+.botonbloque{
+    margin-top: 30px;/*Margen*/
+    margin-left: 90px;/*Margen*/
+    margin-bottom: 30px;/*Margen*/
+    width: 70px;/*Anchura*/
+    border: 2px solid red;/*Borde*/
+    padding: 10px;/*Relleno*/
+    border-radius: 5px;/*Borde*/
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+    justify-content: center;/*Todo el contenido estara centrado*/
+    font-size: 15px;/*Tamaño de la letra*/
+    font-weight: 900;/*Intensidad*/
+    color: red;/*Color rojo*/
+}
+
+.treseguido{
+    display: flex;/*Y se mostrara todo en la misma linea todo junto*/
+}
+
+.fotos{
+    border-radius: 0.375em;/*borde rendondeado*/
+    border: 0;/*Sin borde*/
+    width: 300px;/*Anchura*/
+    transition: transform .3s;/*Transicion de 3 segundos*/
+}
+
+.fotos:hover{
+    border-radius: 0.375em;/*borde rendondeado*/
+    border: 0;/*Sin borde*/
+    width: 300px;/*Anchura*/
+    transform: scale(1.1);/*Tranformacion de aumento de 1.1*/
+}
+
+.bloquefoto{
+    width: 300px;/*Anchura*/
+    overflow: hidden;/*Desordamiento en oculto*/
+    border-radius: 0.375em;/*borde rendondeado*/
+    border: 0;/*Sin borde*/
+}
+
+.bordefoto{
+    height: 180px;/*Altura*/
+    border-radius: 0.375em;/*borde rendondeado*/
+}
+
+.mainmenubtn {
+    color: white;/*color blanco*/
+    cursor: pointer;/*Actua sobre el desplegable*/
+    }
+
+.dropdown {
+    position: relative;/*Posicion en relación con su posición normal*/
+    display: inline-block;/*Ocupa todo el espacio en la linea*/
+}
+.dropdown-child {
+    display: none;/*Sin display*/
+    min-width: 200px;/*Anchura minima de 200px*/
+}
+
+.dropdown-child a {
+    padding: 10px;/*Relleno*/
+    text-decoration: none;/*Nada de decoracion*/
+    display: block;/*Ocupa todo el espacio*/
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;/*Ocupa todo el espacio*/
+}
+
+.flecha{
+    color: grey;/*Color gris*/
+    margin-left: 215px;/*Margen izquierdo*/
+}
+
+.flecha:hover{
+    color: red;/*Color rojo al pasar por encima*/
+    margin-left: 215px;/*Margen izquierdo*/
+}
+
+.flecha2{
+    color: grey;/*Color gris*/
+    margin-left: 135px;/*Margen izquierdo*/
+}
+
+.flecha2:hover{
+    color: red;/*Color rojo al pasar por encima*/
+    margin-left: 135px;/*Margen izquierdo*/
+}
+
+.edi{
+    color: black;
+    font-weight: 700;
+}
+
+.edi:hover{
+    color: red;
+    font-weight: 700;
+}
